@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Rose — той-хана в Алматы</title>
+  <meta name="description" content="Royal Rose — той-хана в Алматы: свадьбы, юбилеи, тойлар.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo">Royal Rose</a>
+  <nav id="menu">
+    <a href="#halls" data-i18n="nav_halls"></a>
+    <a href="#food" data-i18n="nav_food"></a>
+    <a href="#gallery" data-i18n="nav_gallery"></a>
+    <a href="#calc" data-i18n="nav_calc"></a>
+    <a href="#book" data-i18n="nav_book"></a>
+    <a href="#contacts" data-i18n="nav_contacts"></a>
+  </nav>
+  <div class="right">
+    <div class="lang">
+      <button data-lang="ru" class="on">RU</button>
+      <button data-lang="kz">KZ</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <video autoplay muted loop playsinline>
+    <source src="video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="shade"></div>
+  <div class="hero-in">
+    <p class="sub" data-i18n="hero_sub"></p>
+    <h1 data-i18n="hero_h1"></h1>
+    <p class="lead" data-i18n="hero_lead"></p>
+    <div class="btns">
+      <a href="#calc" class="btn gold" data-i18n="btn_calc"></a>
+      <a href="#book" class="btn ghost" data-i18n="btn_book"></a>
+    </div>
+  </div>
+  <ul class="stats">
+    <li><b data-n="240">0</b><span data-i18n="st1"></span></li>
+    <li><b data-n="2">0</b><span data-i18n="st2"></span></li>
+    <li><b data-n="3">0</b><span data-i18n="st3"></span></li>
+  </ul>
+</section>
+
+<section class="sec" id="halls">
+  <h2 data-i18n="halls_h"></h2>
+  <p class="sec-sub" data-i18n="halls_sub"></p>
+  <div class="grid">
+    <article class="card"><h3 data-i18n="hn1"></h3><p class="cap" data-i18n="cap1"></p><p data-i18n="hd1"></p></article>
+    <article class="card"><h3 data-i18n="hn2"></h3><p class="cap" data-i18n="cap2"></p><p data-i18n="hd2"></p></article>
+  </div>
+</section>
+
+<section class="sec tint" id="food">
+  <h2 data-i18n="food_h"></h2>
+  <p class="sec-sub" data-i18n="food_sub"></p>
+  <div class="grid">
+    <article class="card"><h3 data-i18n="m1n"></h3><p class="price">9 500 ₸ <small data-i18n="perg"></small></p><ul data-list="m1l"></ul></article>
+    <article class="card"><h3 data-i18n="m2n"></h3><p class="price">15 500 ₸ <small data-i18n="perg"></small></p><p class="cap" data-i18n="from150"></p><ul data-list="m2l"></ul><p class="own" data-i18n="own2"></p></article>
+    <article class="card"><h3 data-i18n="m3n"></h3><p class="price">19 500 ₸ <small data-i18n="perg"></small></p><p class="cap" data-i18n="from150"></p><ul data-list="m3l"></ul><p class="own" data-i18n="own3"></p></article>
+  </div>
+</section>
+
+<section class="sec tint" id="gallery">
+  <h2 data-i18n="gal_h"></h2>
+  <p class="sec-sub" data-i18n="gal_sub"></p>
+  <div class="gal">
+    <figure><img data-photo="1" alt="Royal Rose" loading="lazy"></figure>
+    <figure><img data-photo="2" alt="Royal Rose" loading="lazy"></figure>
+    <figure><img data-photo="3" alt="Royal Rose" loading="lazy"></figure>
+    <figure><img data-photo="4" alt="Royal Rose" loading="lazy"></figure>
+    <figure><img data-photo="5" alt="Royal Rose" loading="lazy"></figure>
+    <figure><img data-photo="6" alt="Royal Rose" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec dark" id="calc">
+  <h2 data-i18n="calc_h"></h2>
+  <p class="sec-sub" data-i18n="calc_sub"></p>
+  <div class="calc">
+    <label><span data-i18n="l_hall"></span>
+      <select id="hall">
+        <option value="90" data-i18n="hall1"></option>
+        <option value="240" data-i18n="hall2" selected></option>
+      </select>
+    </label>
+    <label><span data-i18n="l_menu"></span>
+      <select id="menuType">
+        <option value="9500" data-i18n="mo1"></option>
+        <option value="15500" data-i18n="mo2"></option>
+        <option value="19500" data-i18n="mo3"></option>
+      </select>
+    </label>
+    <label><span><span data-i18n="l_guests"></span>: <b id="gv">150</b></span>
+      <input type="range" id="guests" min="30" max="240" step="10" value="100">
+    </label>
+    <div class="total"><span data-i18n="total"></span><b id="total">0 ₸</b></div>
+  </div>
+</section>
+
+<section class="sec" id="book">
+  <h2 data-i18n="book_h"></h2>
+  <p class="sec-sub" data-i18n="book_sub"></p>
+  <div class="book">
+    <input id="name" data-i18n-ph="ph_name" autocomplete="name">
+    <input id="phone" data-i18n-ph="ph_phone" type="tel" autocomplete="tel">
+    <input id="date" type="date">
+    <button class="btn gold" id="send" data-i18n="btn_send"></button>
+    <p class="err" id="err"></p>
+  </div>
+</section>
+
+<footer class="sec dark" id="contacts">
+  <h2 data-i18n="cont_h"></h2>
+  <p>Алматы, проспект Гагарина, 42/44</p>
+  <p><a href="tel:+77081914150">+7 708 191 4150</a></p>
+  <div class="btns">
+    <a class="btn gold" href="https://2gis.kz/almaty/geo/70000001029546996" target="_blank" rel="noopener" data-i18n="btn_map"></a>
+    <a class="btn ghost" href="https://www.instagram.com/royal.rosealmaty?stkn=MWs1NmltbWZjZno0dw==" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn ghost" href="https://wa.me/77081914150" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <small>© 2026 Royal Rose</small>
+</footer>
+
+<a class="wa" href="https://wa.me/77081914150" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script src="script.js"></script>
+</body>
+</html>
